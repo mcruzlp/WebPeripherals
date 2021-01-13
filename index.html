@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unidades DAT</title>
+	<!-- enlace a favicon -->
+	<link rel="shortcut icon" href="images/icon/favicon.ico" type="image/x-icon">
+	<!-- enlace a font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- enlace al estilo -->
+	<link rel="stylesheet" href="styles/estilo.css">
+	<!-- enlace a libreria jquery para smooth scroll-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- enlace a javascripts (top navbar responsive, smooth scroll) -->
+	<script src="javascripts/funciones.js"></script>
+</head>
+<body>
+	<!-- flecha para volver arriba -->
+	<a href="#hero"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+	<div id="container">
+			<nav>
+				<div class="topnav" id="mytopnav">
+					
+					<a href="#hero">Inicio</a>
+					<a href="#intro" class="topnav dropdown">
+						<button onclick="dropdown()" class="dropbtn">Evolución histórica</button>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="#1">Tarjetas perforadas 1725-1970s</a>
+							<a href="#2">Cables y cintas magnéticas 1898-1970s</a>
+							<a href="#3">La era digital</a>
+							<a href="#4">DAT en la actualidad</a>
+						</div>
+					</a>
+					<a href="#funcionamiento">¿Cómo funciona?</a>
+					<a href="#tipos">Tipos</a>
+					<a href="#install">Instalación</a>
+					<a href="#marcas">Marcas</a>
+
+					<a href="javascript:void(0);" class="icon" onclick="toggle()"><i class="fa fa-bars"></i></a>
+				</div>
+			</nav>
+
+			<section id="hero"><!-- hero section con imagen de fondo-->
+				<img src="images/DAT/dat_vector_recorte.svg" alt="DAT">
+			</section>
+
+			<section id="intro">
+				<h1>Evolución histórica</h1>
+					<div id=1>
+						<h3>1725-1970s Tarjetas perforadas</h3>
+						<br>
+						<div  class="grid2col">
+							<!-- Slideshow container -->
+							<div class="slideshow-container col2">
+								<!-- Full-width images with number -->
+								<div id="pic1_1" class="mySlides fade">
+									<div class="numbertext">1 / 3</div>
+									<img src="images/Evolution/Basile_Bouchon_1725_loom.jpg" alt="Telar automático Basile Bouchon">
+									<div class="text">Telar automático Basile Bouchon</div>
+								</div>
+					
+								<div id="pic1_2" class="mySlides fade">
+									<div class="numbertext">2 / 3</div>
+									<img src="images/Evolution/Jacquard_1810.png" alt="Telar programado con tablas perforadas">
+									<div class="text">Telar programado con tablas perforadas</div>
+								</div>
+					
+								<div id="pic1_3" class="mySlides fade">
+									<div class="numbertext">3 / 3</div>
+									<img src="images/Evolution/tarj_perf2.jpg" alt="Tarjeta perforada de papel">
+									<div class="text">Tarjeta perforada de papel</div>
+								</div>
+
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								<br>
+								<br>
+								<!-- The dots/circles -->
+								<div style="text-align:center">
+									<span class="dot" onclick="currentSlide(1)"><a href="#pic1_1"></a></span>
+									<span class="dot" onclick="currentSlide(2)"><a href="#pic1_2"></a></span>
+									<span class="dot" onclick="currentSlide(3)"><a href="#pic1_3"></a></span>
+								</div>
+							</div>
+							<div class="col2">
+								<p>Desde 1725, con la creación de la cinta perforada por Basile Bouchon, pasando por las tarjetas perforadas de Joseph Marie Jacquard en 1801, hasta nuestros días, los dispositivos de almacenamiento han evolucionado tanto en materiales como en sistema de almacenamiento y capacidad.<br>Las tarjetas perforadas, utilizadas tanto para automatización de tareas repetitivas, como para el almacenamiento de información, siguieron utilizándose hasta los años 70, cuando fueron sustituidas poco a poco por las cintas magnéticas que, a pesar de los múltiples sistemas de almacenamiento que se han desarrollado posteriormente, siguen siendo utilizadas.</p>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div id=2>
+						<h3>1898-1970s Cables y cintas magnéticas</h3>
+						<br>
+						<div class="grid2col">
+							<div class="col2">
+								<p>Las cintas magnéticas actuales no son iguales a las utilizadas en sus inicios, sino que han ido evolucionando según lo ha hecho el dispositivo que se utilizaba para su escritura. En 1898, Valdemar Poulsen inventó la grabadora magnética de cable (Telegráfono), en 1928, Fritz Pfleumer patentó la cinta magnética sobre el papel y, en 1934, registró una cinta de magnetita, celulosa y acetato. Fue presentada comercialmente en 1935 y en 1936 se realizó la primera grabación pública.<br>Las máquinas grabadoras también fueron mejoradas gracias a las investigaciones que se realizaron en Alemania, Estados Unidos y Japón principalmente, pasando del magnetófono de alambre al de bobina abierta, al que se le hicieron modificaciones para mejorar la calidad del audio, lo que produjo el desarrollo en todos los campos, ampliando las grabaciones a imagen y sonido, memorias, automatismos, etc.</p>
+							</div>
+							<div class="slideshow-container col2">
+							<div id="pic2_1" class="mySlides fade">
+								<div class="numbertext">1 / 3</div>
+								<img src="images/Evolution/Telegraphon.jpg" alt="Telegráfono">
+								<div class="text">Telegráfono</div>
+							</div>
+							<div id="pic2_2" class="mySlides fade">
+								<div class="numbertext">2 / 3</div>
+								<img src="images/Evolution/magnetofono.JPG" alt="Magnetófono">
+								<div class="text">Magnetófono</div>
+							</div>
+							<div id="pic2_3" class="mySlides fade">
+								<div class="numbertext">3 / 3</div>
+								<img src="images/Evolution/AEG_K1_Zierl_rm4.jpg" alt="GrabadoraAEG">
+								<div class="text">GrabadoraAEG</div>
+							</div>
+							<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							<br>
+							<br>
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"><a href="#pic2_1"></a></span>
+								<span class="dot" onclick="currentSlide(2)"><a href="#pic2_2"></a></span>
+								<span class="dot" onclick="currentSlide(3)"><a href="#pic2_3"></a></span>
+							</div>
+							</div>
+						</div>
+						<img src="images/Evolution/formatos_cinta.jpg" alt="Cintas de varios formatos" id="formatosCinta">
+						<p>En los años 50 hubo una gran revolución musical que fomentó aún más la investigación sobre estos medios de grabación y reproducción, apareciendo múltiples formatos de almacenamiento mediante cintas magnéticas, y de sus correspondientes grabadoras y reproductoras, pero todas se basan en el mismo principio: las vibraciones que produce el sonido se transforman en variaciones de voltaje con la misma intensidad, amplitud y frecuencia a través de un micrófono. Estas diferencias de potencial se aplican a la bobina de la cabeza grabadora, que transforma la corriente eléctrica en una señal magnética de la misma intensidad, amplitud y frecuencia, reordenando las partículas magnéticas que hay en las cintas.<br>En el campo de la informática se utilizaron para el almacenamiento de datos, siendo la EDVAC (1949) la primera computadora que tenía grabadora-lectora de cintas, y el UNIVAC pasó la información almacenada en tarjetas perforadas a cinta.</p>
+						<hr>
+					</div>
+					<div id=3>
+						<h3>La era digital</h3>
+						<br>
+						<div class="grid2col">
+							<div class="slideshow-container col2">
+							<!-- Full-width images with number -->
+								<div id="pic3_1" class="mySlides fade">
+									<div class="numbertext">1 / 2</div>
+									<img src="images/DAT/analog_signal.png" alt="Señal analógica">
+									<div class="text">Señal analógica</div>
+								</div>
+						
+								<div id="pic3_2" class="mySlides fade">
+									<div class="numbertext">2 / 2</div>
+									<img src="images/DAT/dig_signal.png" alt="Señal digital">
+									<div class="text">Señal digital</div>
+								</div>
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								<br>
+								<br>
+								<!-- The dots/circles -->
+								<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"><a href="#pic3_1"></a></span>
+								<span class="dot" onclick="currentSlide(2)"><a href="#pic3_2"></a></span>
+								</div>
+							</div>
+							<div class="col2">
+							<p>A finales de los 70, se comercializaron los primeros dispositivos de almacenamiento digital, que supuso una mejora en la calidad de la información, un aumento de la vida útil y la reducción del tamaño de los soportes.<br>La diferencia fundamental entre la señal analógica y la digital es la continuidad de la primera, frente al escalonamiento de la segunda.</p>
+							</div>
+						</div>
+						
+						<div>
+							<p>Para la escritura y la lectura de los medios digitales también se usa la magnetización, pero en vez de polarizar las partículas según las características eléctricas de la onda sonora, se redondea el valor de la tensión a un número que se codifica a binario, según el que se magnetizan las partículas.<br>Los formatos de almacenamiento digitales más comercializados fueron el CD (Compact Disc), el MiniCD, el DVD, el Blu Ray, la cinta de audio digital (o DAT por sus siglas en inglés) y las memorias flash que siguen usándose hoy día.</p>
+
+							<div class="slideshow-container">
+								<div id="pic3_3" class="mySlides fade">
+									<div class="numbertext">1 / 6</div>
+									<img src="images/DAT/cinta_dat.jpg" alt="cintaDAT">
+									<div class="text">Cinta DAT</div>
+								</div>
+								<div id="pic3_4" class="mySlides fade">
+									<div class="numbertext">2 / 6</div>
+									<img src="images/Evolution/dat_recorder_casa.jpg" alt="Grabadora DAT SONY">
+									<div class="text">Grabadora DAT SONY</div>
+								</div>
+								<div id="pic3_5" class="mySlides fade">
+									<div class="numbertext">3 / 6</div>
+									<img src="images/Evolution/cd_minicd2.png" alt="CD y miniCD">
+									<div class="text">CD y miniCD</div>
+								</div>
+								<div id="pic3_6" class="mySlides fade">
+									<div class="numbertext">4 / 6</div>
+									<img src="images/Evolution/cd_rec.gif" alt="Grabadora CD/DVD/BlueRay">
+									<div class="text">Grabadora CD/DVD/BlueRay</div>
+								</div>
+								<div id="pic3_7" class="mySlides fade">
+									<div class="numbertext">5 / 6</div>
+									<img src="images/Evolution/usb.png" alt="Evolución del USB">
+									<div class="text">Evolución del USB</div>
+								</div>
+								<div id="pic3_8" class="mySlides fade">
+									<div class="numbertext">6 / 6</div>
+									<img src="images/Evolution/usbc.png" alt="PenDrive USB-C">
+									<div class="text">PenDrive USB-C</div>
+								</div>
+
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								<br>
+								<br>
+								<!-- The dots/circles -->
+								<div style="text-align:center">
+									<span class="dot" onclick="currentSlide(1)"><a href="#pic3_1"></a></span>
+									<span class="dot" onclick="currentSlide(2)"><a href="#pic3_2"></a></span>
+									<span class="dot" onclick="currentSlide(3)"><a href="#pic3_3"></a></span>
+									<span class="dot" onclick="currentSlide(4)"><a href="#pic3_4"></a></span>
+									<span class="dot" onclick="currentSlide(5)"><a href="#pic3_5"></a></span>
+									<span class="dot" onclick="currentSlide(6)"><a href="#pic3_6"></a></span>
+								</div>
+							</div>
+
+							<p>Como podemos ver en las imágenes anteriores, estos también han ido evolucionando haciéndose cada vez más pequeños, con mayor capacidad y de mayor velocidad de lectura y escritura.</p>
+						</div>
+						<hr>
+					</div>
+					<div id=4>
+						<h3>DAT en la actualidad</h3>
+						<p>La DAT es un soporte para la grabación y reproducción de audio digital, creado por Sony en 1987. Fueron las primeras de este formato en almacenar audio digital.<br>Para la grabación y reproducción de las DAT se desarrolló, junto con las cintas, el DAT Recorder DTC-1000ES.<br>Su popularidad en el sector profesional se debió a la alta calidad de sonido que ofrecía a bajo coste, a las distintas opciones de frecuencias según la necesidad del usuario y a las posibilidades que ofrecían las grabadoras portátiles.<br>Actualmente se utilizan para el almacenamiento masivo de datos (en formato DDS, Digital Data Storage), como copias de seguridad, donde lo más importante es la capacidad pues, por su modo de acceso secuencial, es un método muy lento.</p>
+					</div>
+			</section>
+
+			<section id="funcionamiento">
+				<h1>¿Cómo funciona?</h1>
+				<p>La principal característica de este sistema es que la frecuencia de la tasa de muestreo es similar a la de los CDs (32, 44,1 o 48 kHz). La ventaja de éstas sobre otros medios coetáneos como el casete compacto digital (DCC en inglés) o el MiniDisc Hi-MD, es que la copia del sonido desde otra fuente digital será exacta, mientras que los otros pierden datos en la compresión de la información. Otra diferencia importante es que sólo se pueden grabar por un lado.<br>En cuanto al proceso de grabación, cuando se introduce el cartucho en la grabadora, ésta saca la cinta y la enrolla en los cabezales, y comienza la magnetización que escribe los 0s y 1s en los bits, almacenados en bloques. Para la reproducción se realiza el proceso inverso.</p>
+				<img src="images/DAT/func1.gif" alt="Sistema de grabado y reproducción">
+				<img src="images/DAT/helical_rec.png" alt="Grabación helical">
+				<p>Existen dos métodos de escritura, el start-stop y el streaming.<br>El start-stop es menos frecuente, porque al escribir los bloques en datos, se pierde mucho espacio de almacenamiento, ya que entre bloque y bloque, la cinta tiene procesos de arranque y parada (de ahí el nombre) y se crean huecos donde no se escribe. Para reducir el espacio perdido, se hacen grupos de bloques y cada formato de cinta tiene una longitud determinada, llamada factor de agrupación.<br>El método streaming es el más actual. La cinta se graba de forma continua, transmitiendo los datos desde un búfer, por ejemplo. De esta forma se reducen los huecos vacíos y se conservan mejor la cinta y los cabezales de grabación.<br>Además, estos sistemas tienen un código de detección y corrección de errores. Esto se consigue mediante la grabación intercalada de las pistas de audio. Durante la grabación de la cinta, se realiza un indexado de los bits de control de datos y se registran algunos datos duplicados. Esto permite que, si se produce un error, éste pueda corregirse automáticamente o cancelarse, sustituyendo el valor por la media de los valores colindantes, evitando ruidos.</p>
+			</section>
+
+			<section id="tipos">
+				<h1>Tipos</h1>
+				<p>Debido a la gran cantidad de empresas que se dedicaron a desarrollar estos soportes al mismo tiempo, se fabricaron dos tipos de cintas DAT:
+					<ul>
+						<li>S-DAT (DAT de Cabeza Estacionaria): la cabeza permanece estática durante la grabación, permite cuatro modos de grabación/reproducción pero sólo uno de reproducción de pregrabado.</li>
+						<li>R-DAT (DAT de Cabeza Rotatoria): la cabeza también gira durante la grabación, permite cuatro modos de grabación/reproducción y 2 de reproducción de pregrabado.</li>
+					</ul>
+				<p>Sus principales diferencias, además de las dimensionales, radican en que las DAT de cabeza estacionaria (S-DAT), al mover sólo la cinta, la velocidad de reproducción y grabación es mayor (47’6, 43’7, 31’7 y 23’8 mm/s frente a las del R-DAT 8’15 4’ 075 y 12’255 mm/s); las tipo S-DAT divide la cinta en 20 pistas con separación de protección, por lo que, aunque tengan más metros, y posibilidad de grabar en caras A y B, a diferencia de las R-DAT, sólo pueden almacenar 90 min de reproducción, frente a los 120 min de las segundas. Además, S-DAT no tienen tapa de protección de la cinta, y las R-DAT sí.<br> Respecto a las grabadoras, podemos encontrar también varios formatos: el portátil, el de estudio y la unidad de cinta para pc.</p>
+				<img src="images/Evolution/dat_rec_device.gif" alt="Grabadora portátil">
+				<img src="images/Evolution/dar_recorder_pioneer.jpg" alt="Grabadora DAT Pioneer de estudio">
+				<img src="images/DAT/dat_hp.jpg" alt="Grabadora DAT HP para PC">
+			</section>
+
+			<section id="install">
+				<h1>Instalación</h1>
+				<p>Se conectaba al pc o servidor mediante cable SAS, que permite altas velocidades de transferencia de datos, o como periférico externo con tarjetas HBA, como ATTO ExpressSAS®™ 6Gb o IBM 42D0510.</p>
+				<img src="images/DAT/dat_conector.jpg" alt="Conector DAT">
+				<img src="images/DAT/dat_faja.jpg" alt="Faja de conexión">
+				<img src="images/DAT/expresssasH680-sas-hba-hi.png" alt="PCIe HBA">
+				<p>En cuanto al software de gestión de estos dispositivos lo hay de dos tipos:
+				<ul>
+					<li>Drivers para la instalación, proporcionado por cada fabricante en el caso de tarjeta o unidad de sobremesa.</li>
+					<li>Software de uso, para el grabado, reproducción, restauración y recuperación de datos como Iperius, Goodsync o ZMANDA, de código abierto.</li>
+				</ul>
+				</p>
+				<img src="images/LTO/amanda.png" alt="Gestión" width="1000px">
+			</section>
+
+			<section id="marcas">
+				<h1>Marcas</h1>
+				<div>
+					<h3>Marcas de cintas DAT</h3>
+				<br>
+				<p>Las principales marcas de cintas DAT que continúan vendiéndose son HP, Dell, IBM, Sony... Estos son algunos ejemplos:</p>
+				<img src="images/DAT/DatDELL.png" alt="Cinta DAT DELL" width="300px">
+				<p><a href="https://www.dell.com/es-es/work/shop/povw/dell-dat-media">Cartuchos de cinta Dell PowerVault DAT:</a> Para conocer el precio hay que escribir al departamento de DAT.</p>
+				<p><a href="https://www.amazon.es/HP-C8010A-Cinta-memoria-color/dp/B000FHT1GW">HP C8010A - Cinta de Memoria de 72 GB (170 m, DDS/DAT), Color Azul</a> 34,8€</p>
+				</div>
+				<div>
+					<h3>Marcas de grabadoras DAT</h3>
+				<p>Las empresas fabricantes de grabadores DAT más destacadas fueron HP, Dell, IBM, Tascam, Quantum... pero en la actualidad ya no fabrican estos dispositivos. Podemos encontrar algunos a la venta por internet, en eBay, Amazon, Alibaba...</p>
+				<p><a href="https://www.ebay.com/c/1393099970">Sony PCM-R500 Digital Audio Recorder DAT fast free shipping for sale online</a> 489,99$</p>
+				<p><a href="https://spanish.alibaba.com/product-detail/hp-storageworks-dat-160-tape-drive-q1575a-q1575-60005-450450-001-62143366287.html">Hp Storageworks Dat 160 Tape Drive Q1575a Q1575-60005 450450-001 - Buy Unidad De Cinta De Montaje,Unidad De Cinta,Unidad De Cinta Lto</a> 430,00$</p>
+				<p><a href="https://www.amazon.es/HP-Unidades-Unidad-cintas-interna/dp/B000YZO82M">HP Unidades de cinta HP DAT Unidad de cintas interna SAS HP DAT 160 - Cargador de cintas (160 GB, 160 GB, 16 MB,Asíncrono</a> 998,00€</p>
+				<p><a href="https://www.ebay.es/i/114220056711">QUANTUM TAPE DRIVE - DAT 160 - 80/160GB</a> 254,99 €</p>
+				<img src="images/DAT/quantum.jpg" alt="Grabadora Quantum" width="300px">
+				<img src="images/LTO/ibm dat.jpg" alt="Grabadora IBM" width="300px">
+				</div>
+				<div>
+					<h3>Marcas de tarjetas PCIe HBA</h3>
+				<p>También hay que mencionar los fabricantes de tarjetas PCI-E Express HBA para pc como ATTO, HP, IBM, DELL, WD, Silverstone...</p>
+				<p><a href="https://www.tonitrus.com/es/servidor/hp-server/accessories/fibre-channel-host-bus-adapter-hba/10107272-003-hp-aj763b-hp-emulex-81e-pci-e-8gb-fibre-channel-dual-port-host-bus-adapter/?number=10107272-014&gclid=Cj0KCQiAtqL-BRC0ARIsAF4K3WGSfMDG7Rp4OK-q_QRqbFHuSJtoaWz4vHUX0qJ-jrlipO7E7jjbuhoaAhbnEALw_wcB">HP Emulex 81E PCI-E 8Gb</a> 522,50€</p>
+				<p><a href="https://www.amazon.es/dp/B01M2AC40Y?tag=hardwa028-21&linkCode=ogi&th=1&psc=1">10Gtek® Internal SAS/SATA Raid Controller PCI Express Host Bus Adapter for LSI 9211-8I, LSI SAS2008 Chip, 8-Port 6Gb/s, High Profile & Low Profile</a> 125,99€</p>
+				<p><a href="https://store.atto.com/sassata-adapters/34-12gb-8-interal-ports-sas-hba.html">ExpressSAS®™ H1208 - 8 Internal 12Gb SAS ports.</a> 495,00$</p>
+				</div>
+			</section>
+
+			<footer class="grid3col">
+				<div class="col3">
+					<h1>Autora de la web:</h1>
+					<p>Cruz López Pérez<br>
+						Estudiante DAM<br>
+						IES Campanillas PTA - Málaga</p>
+					<p>Email: mcruzlp@gmail.com</p>
+				</div>
+				<div class="col3">
+					<h1>Redes Sociales:</h1>
+					<a href="https://github.com/mcruzlp" class="fa fa-github"></a>
+					<a href="https://www.linkedin.com/in/mcruzlp/" class="fa fa-linkedin"></a>
+				</div>
+				<div class="col3">
+					<h1>Contenido:</h1>
+					<a href="#hero">Inicio</a><br>
+					<a href="#intro">Introducción</a><br>
+					<a href="#funcionamiento">¿Cómo funciona?</a><br>
+					<a href="#tipos">Tipos</a><br>
+					<a href="#install">Instalación</a><br>
+					<a href="#marcas">Marcas</a><br>
+				</div>
+			</footer>
+	</div>
+</body>
+</html>
