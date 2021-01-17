@@ -206,6 +206,15 @@ button:hover {
 
 /*********************** INTRO *****************************/
 
+.parallax {
+	background-image: url(../images/back/estante.jpg);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #intro {
 	width: 100%;
 	background-color: black;
@@ -224,11 +233,18 @@ hr {
 
 /*********** SLIDESHOW *****************/
 
-.mySlides img {
-	vertical-align: middle;
-}
 * {
 	box-sizing: border-box;
+}
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4 {
+	display: none;
+}
+
+img {
+	vertical-align: middle;
 }
 
 /* Slideshow container */
@@ -236,41 +252,6 @@ hr {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-	display: none;
-	box-sizing: border-box;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -295,7 +276,6 @@ hr {
 
 /* The dots/bullets/indicators */
 .dot {
-	cursor: pointer;
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
@@ -305,8 +285,7 @@ hr {
 	transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active {
 	background-color: #717171;
 }
 
@@ -336,6 +315,43 @@ hr {
 	}
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px;
+	}
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
 /******************** ¿COMO FUNCIONA? ***********************/
 #funcionamiento {
 	background-image: url("../images/back/fnd-bobinas.jpg");
@@ -347,7 +363,7 @@ hr {
 	background: rgba(128, 128, 128, 0.6);
 	border-style: solid;
 	border-color: rgb(233, 185, 112);
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
 #funcionamiento img {
@@ -374,6 +390,7 @@ hr {
 #install img {
 	width: 300px;
 }
+
 /*********************** MARCAS *****************************/
 
 #marcas {
@@ -427,6 +444,7 @@ footer .fa {
 	#container {
 		width: 100%;
 	}
+
 	#intro p {
 		text-align: left;
 		width: 80%;
