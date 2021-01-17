@@ -369,6 +369,8 @@ hr {
 /************************* TIPOS ***************************/
 
 #tipos img {
+	display: inline-block;
+	padding: 2%;
 	width: 300px;
 }
 
@@ -377,18 +379,27 @@ hr {
 #install {
 	padding: 20px;
 	color: white;
+	background-image: url(../images/back/eniac.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+#install div {
+	background: rgba(128, 128, 128, 0.6);
+	border-style: solid;
+	border-color: rgb(233, 185, 112);
+	border-radius: 2%;
 }
 
 #install img {
+	float: left;
 	height: 300px;
+	padding: 2%;
 }
 /*********************** MARCAS *****************************/
 
 #marcas {
 	padding: 20px;
-	background-image: url(../images/back/eniac.jpg);
-	background-size: cover;
-	background-position: top center;
 	color: white;
 }
 
