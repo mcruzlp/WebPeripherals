@@ -347,14 +347,11 @@ hr {
 	background: rgba(128, 128, 128, 0.6);
 	border-style: solid;
 	border-color: rgb(233, 185, 112);
-	border-radius: 2%;
+	border-radius: 8px;
 }
 
 #funcionamiento img {
-	top: 10vw;
-	left: 15vw;
-	width: 70%;
-	height: 70%;
+	width: 300px;
 }
 
 #funcionamiento img :hover {
@@ -364,10 +361,7 @@ hr {
 /************************* TIPOS ***************************/
 
 #tipos img {
-	top: 10vw;
-	left: 15vw;
-	width: 70%;
-	height: 70%;
+	width: 300px;
 }
 
 /********************* INSTALACION *************************/
@@ -378,10 +372,7 @@ hr {
 }
 
 #install img {
-	top: 10vw;
-	left: 15vw;
-	width: 70%;
-	height: 70%;
+	width: 300px;
 }
 /*********************** MARCAS *****************************/
 
