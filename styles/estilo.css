@@ -14,7 +14,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	padding-top: 56.25%;
+	padding-top: 50%;
 }
 
 .iframe-content {
@@ -92,6 +92,18 @@ body {
 	font-family: body;
 }
 
+.fa-arrow-up {
+	/***** flecha para volver al inicio ****/
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	color: rgb(233, 185, 112);
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(233, 185, 112);
+	z-index: 99;
+}
+
 #container {
 	width: 100%;
 	margin: auto;
@@ -104,18 +116,6 @@ h1 {
 h3 {
 	color: white;
 	text-decoration: underline;
-}
-
-.fa-arrow-up {
-	/***** flecha para volver al inicio ****/
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	color: rgb(233, 185, 112);
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid rgb(233, 185, 112);
-	z-index: 99;
 }
 
 section {
@@ -142,11 +142,6 @@ ul {
 	text-align: left;
 	color: white;
 	padding: 20px;
-}
-
-.centrado {
-	position: relative;
-	margin: auto;
 }
 
 a:hover {
@@ -182,6 +177,15 @@ button:hover {
 	margin: 2%;
 }
 
+@media only screen and (max-width: 900px) {
+	.grid2col {
+		grid-template-columns: 100%;
+	}
+	.grid3col {
+		grid-template-columns: 100%;
+	}
+}
+
 /*********************** HERO *******************************/
 
 #hero {
@@ -208,7 +212,10 @@ button:hover {
 }
 
 #intro img {
-	width: 500px;
+	top: 10vw;
+	left: 15vw;
+	width: 70%;
+	height: 70%;
 }
 
 hr {
@@ -344,7 +351,10 @@ hr {
 }
 
 #funcionamiento img {
-	width: 300px;
+	top: 10vw;
+	left: 15vw;
+	width: 70%;
+	height: 70%;
 }
 
 #funcionamiento img :hover {
@@ -354,7 +364,10 @@ hr {
 /************************* TIPOS ***************************/
 
 #tipos img {
-	width: 300px;
+	top: 10vw;
+	left: 15vw;
+	width: 70%;
+	height: 70%;
 }
 
 /********************* INSTALACION *************************/
@@ -365,7 +378,10 @@ hr {
 }
 
 #install img {
-	width: 300px;
+	top: 10vw;
+	left: 15vw;
+	width: 70%;
+	height: 70%;
 }
 /*********************** MARCAS *****************************/
 
@@ -414,15 +430,6 @@ footer .fa {
 .fa-linkedin {
 	background: #007bb5;
 	color: white;
-}
-
-@media only screen and (max-width: 900px) {
-	.grid2col {
-		grid-template-columns: 100%;
-	}
-	.grid3col {
-		grid-template-columns: 100%;
-	}
 }
 
 @media only screen and (max-width: 400px) {
