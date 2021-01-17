@@ -19,30 +19,23 @@
 	<!-- flecha para volver arriba -->
 	<a href="#hero"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
-	<div id="container">
+	<div id="container" class="container">
 			<nav>
-				<div class="topnav" id="mytopnav">
+				<div class="topnav" id="myTopnav">
 					
 					<a href="#hero">Inicio</a>
-					<a href="#intro" class="topnav dropdown">
-						<button onclick="dropdown()" class="dropbtn">Evolución histórica</button>
-						<div id="myDropdown" class="dropdown-content">
-							<a href="#1">Tarjetas perforadas 1725-1970s</a>
-							<a href="#2">Cables y cintas magnéticas 1898-1970s</a>
-							<a href="#3">La era digital</a>
-							<a href="#4">DAT en la actualidad</a>
-						</div>
-					</a>
+					<a href="#intro">Evolución histórica</a>
 					<a href="#funcionamiento">¿Cómo funciona?</a>
 					<a href="#tipos">Tipos</a>
 					<a href="#install">Instalación</a>
 					<a href="#marcas">Marcas</a>
-
-					<a href="javascript:void(0);" class="icon" onclick="toggle()"><i class="fa fa-bars"></i></a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
 				</div>
 			</nav>
 
-			<section id="hero"><!-- hero section con imagen de fondo-->
+			<section id="hero">
 				<img src="images/DAT/dat_vector_recorte.svg" alt="DAT">
 			</section>
 
@@ -50,7 +43,6 @@
 				<h1>Evolución histórica</h1>
 					<div id=1>
 						<h3>1725-1970s Tarjetas perforadas</h3>
-						<br>
 						<div  class="grid2col">
 							<!-- Slideshow container -->
 							<div class="slideshow-container col2">
@@ -60,7 +52,6 @@
 									<img src="images/Evolution/Basile_Bouchon_1725_loom.jpg" alt="Telar automático Basile Bouchon">
 									<div class="text">Telar automático Basile Bouchon</div>
 								</div>
-					
 								<div id="pic1_2" class="mySlides fade">
 									<div class="numbertext">2 / 3</div>
 									<img src="images/Evolution/Jacquard_1810.png" alt="Telar programado con tablas perforadas">
@@ -93,7 +84,6 @@
 					</div>
 					<div id=2>
 						<h3>1898-1970s Cables y cintas magnéticas</h3>
-						<br>
 						<div class="grid2col">
 							<div class="col2">
 								<p>Las cintas magnéticas actuales no son iguales a las utilizadas en sus inicios, sino que han ido evolucionando según lo ha hecho el dispositivo que se utilizaba para su escritura. En 1898, Valdemar Poulsen inventó la grabadora magnética de cable (Telegráfono), en 1928, Fritz Pfleumer patentó la cinta magnética sobre el papel y, en 1934, registró una cinta de magnetita, celulosa y acetato. Fue presentada comercialmente en 1935 y en 1936 se realizó la primera grabación pública.<br>Las máquinas grabadoras también fueron mejoradas gracias a las investigaciones que se realizaron en Alemania, Estados Unidos y Japón principalmente, pasando del magnetófono de alambre al de bobina abierta, al que se le hicieron modificaciones para mejorar la calidad del audio, lo que produjo el desarrollo en todos los campos, ampliando las grabaciones a imagen y sonido, memorias, automatismos, etc.</p>
@@ -127,13 +117,14 @@
 							</div>
 							</div>
 						</div>
-						<img src="images/Evolution/formatos_cinta.jpg" alt="Cintas de varios formatos" id="formatosCinta">
-						<p>En los años 50 hubo una gran revolución musical que fomentó aún más la investigación sobre estos medios de grabación y reproducción, apareciendo múltiples formatos de almacenamiento mediante cintas magnéticas, y de sus correspondientes grabadoras y reproductoras, pero todas se basan en el mismo principio: las vibraciones que produce el sonido se transforman en variaciones de voltaje con la misma intensidad, amplitud y frecuencia a través de un micrófono. Estas diferencias de potencial se aplican a la bobina de la cabeza grabadora, que transforma la corriente eléctrica en una señal magnética de la misma intensidad, amplitud y frecuencia, reordenando las partículas magnéticas que hay en las cintas.<br>En el campo de la informática se utilizaron para el almacenamiento de datos, siendo la EDVAC (1949) la primera computadora que tenía grabadora-lectora de cintas, y el UNIVAC pasó la información almacenada en tarjetas perforadas a cinta.</p>
+						<div>
+							<img src="images/Evolution/formatos_cinta.jpg" alt="Cintas de varios formatos">
+							<p>En los años 50 hubo una gran revolución musical que fomentó aún más la investigación sobre estos medios de grabación y reproducción, apareciendo múltiples formatos de almacenamiento mediante cintas magnéticas, y de sus correspondientes grabadoras y reproductoras, pero todas se basan en el mismo principio: las vibraciones que produce el sonido se transforman en variaciones de voltaje con la misma intensidad, amplitud y frecuencia a través de un micrófono. Estas diferencias de potencial se aplican a la bobina de la cabeza grabadora, que transforma la corriente eléctrica en una señal magnética de la misma intensidad, amplitud y frecuencia, reordenando las partículas magnéticas que hay en las cintas.<br>En el campo de la informática se utilizaron para el almacenamiento de datos, siendo la EDVAC (1949) la primera computadora que tenía grabadora-lectora de cintas, y el UNIVAC pasó la información almacenada en tarjetas perforadas a cinta.</p>
+						</div>
 						<hr>
 					</div>
 					<div id=3>
 						<h3>La era digital</h3>
-						<br>
 						<div class="grid2col">
 							<div class="slideshow-container col2">
 							<!-- Full-width images with number -->
@@ -163,10 +154,8 @@
 							<p>A finales de los 70, se comercializaron los primeros dispositivos de almacenamiento digital, que supuso una mejora en la calidad de la información, un aumento de la vida útil y la reducción del tamaño de los soportes.<br>La diferencia fundamental entre la señal analógica y la digital es la continuidad de la primera, frente al escalonamiento de la segunda.</p>
 							</div>
 						</div>
-						
 						<div>
 							<p>Para la escritura y la lectura de los medios digitales también se usa la magnetización, pero en vez de polarizar las partículas según las características eléctricas de la onda sonora, se redondea el valor de la tensión a un número que se codifica a binario, según el que se magnetizan las partículas.<br>Los formatos de almacenamiento digitales más comercializados fueron el CD (Compact Disc), el MiniCD, el DVD, el Blu Ray, la cinta de audio digital (o DAT por sus siglas en inglés) y las memorias flash que siguen usándose hoy día.</p>
-
 							<div class="slideshow-container">
 								<div id="pic3_3" class="mySlides fade">
 									<div class="numbertext">1 / 6</div>
@@ -214,7 +203,6 @@
 									<span class="dot" onclick="currentSlide(6)"><a href="#pic3_6"></a></span>
 								</div>
 							</div>
-
 							<p>Como podemos ver en las imágenes anteriores, estos también han ido evolucionando haciéndose cada vez más pequeños, con mayor capacidad y de mayor velocidad de lectura y escritura.</p>
 						</div>
 						<hr>
@@ -227,10 +215,12 @@
 
 			<section id="funcionamiento">
 				<h1>¿Cómo funciona?</h1>
-				<p>La principal característica de este sistema es que la frecuencia de la tasa de muestreo es similar a la de los CDs (32, 44,1 o 48 kHz). La ventaja de éstas sobre otros medios coetáneos como el casete compacto digital (DCC en inglés) o el MiniDisc Hi-MD, es que la copia del sonido desde otra fuente digital será exacta, mientras que los otros pierden datos en la compresión de la información. Otra diferencia importante es que sólo se pueden grabar por un lado.<br>En cuanto al proceso de grabación, cuando se introduce el cartucho en la grabadora, ésta saca la cinta y la enrolla en los cabezales, y comienza la magnetización que escribe los 0s y 1s en los bits, almacenados en bloques. Para la reproducción se realiza el proceso inverso.</p>
-				<img src="images/DAT/func1.gif" alt="Sistema de grabado y reproducción">
-				<img src="images/DAT/helical_rec.png" alt="Grabación helical">
-				<p>Existen dos métodos de escritura, el start-stop y el streaming.<br>El start-stop es menos frecuente, porque al escribir los bloques en datos, se pierde mucho espacio de almacenamiento, ya que entre bloque y bloque, la cinta tiene procesos de arranque y parada (de ahí el nombre) y se crean huecos donde no se escribe. Para reducir el espacio perdido, se hacen grupos de bloques y cada formato de cinta tiene una longitud determinada, llamada factor de agrupación.<br>El método streaming es el más actual. La cinta se graba de forma continua, transmitiendo los datos desde un búfer, por ejemplo. De esta forma se reducen los huecos vacíos y se conservan mejor la cinta y los cabezales de grabación.<br>Además, estos sistemas tienen un código de detección y corrección de errores. Esto se consigue mediante la grabación intercalada de las pistas de audio. Durante la grabación de la cinta, se realiza un indexado de los bits de control de datos y se registran algunos datos duplicados. Esto permite que, si se produce un error, éste pueda corregirse automáticamente o cancelarse, sustituyendo el valor por la media de los valores colindantes, evitando ruidos.</p>
+				<div>
+					<p>La principal característica de este sistema es que la frecuencia de la tasa de muestreo es similar a la de los CDs (32, 44,1 o 48 kHz). La ventaja de éstas sobre otros medios coetáneos como el casete compacto digital (DCC en inglés) o el MiniDisc Hi-MD, es que la copia del sonido desde otra fuente digital será exacta, mientras que los otros pierden datos en la compresión de la información. Otra diferencia importante es que sólo se pueden grabar por un lado.<br>En cuanto al proceso de grabación, cuando se introduce el cartucho en la grabadora, ésta saca la cinta y la enrolla en los cabezales, y comienza la magnetización que escribe los 0s y 1s en los bits, almacenados en bloques. Para la reproducción se realiza el proceso inverso.</p>
+					<img src="images/DAT/func1.gif" alt="Sistema de grabado y reproducción">
+					<img src="images/DAT/helical_rec.png" alt="Grabación helical">
+					<p>Existen dos métodos de escritura, el start-stop y el streaming.<br>El start-stop es menos frecuente, porque al escribir los bloques en datos, se pierde mucho espacio de almacenamiento, ya que entre bloque y bloque, la cinta tiene procesos de arranque y parada (de ahí el nombre) y se crean huecos donde no se escribe. Para reducir el espacio perdido, se hacen grupos de bloques y cada formato de cinta tiene una longitud determinada, llamada factor de agrupación.<br>El método streaming es el más actual. La cinta se graba de forma continua, transmitiendo los datos desde un búfer, por ejemplo. De esta forma se reducen los huecos vacíos y se conservan mejor la cinta y los cabezales de grabación.<br>Además, estos sistemas tienen un código de detección y corrección de errores. Esto se consigue mediante la grabación intercalada de las pistas de audio. Durante la grabación de la cinta, se realiza un indexado de los bits de control de datos y se registran algunos datos duplicados. Esto permite que, si se produce un error, éste pueda corregirse automáticamente o cancelarse, sustituyendo el valor por la media de los valores colindantes, evitando ruidos.</p>
+				</div>
 			</section>
 
 			<section id="tipos">
@@ -258,35 +248,35 @@
 					<li>Software de uso, para el grabado, reproducción, restauración y recuperación de datos como Iperius, Goodsync o ZMANDA, de código abierto.</li>
 				</ul>
 				</p>
-				<img src="images/LTO/amanda.png" alt="Gestión" width="1000px">
+				<img src="images/LTO/amanda.png" alt="Gestión">
 			</section>
 
-			<section id="marcas">
+			<section id="marcas" class="grid3col">
 				<h1>Marcas</h1>
-				<div>
-					<h3>Marcas de cintas DAT</h3>
 				<br>
-				<p>Las principales marcas de cintas DAT que continúan vendiéndose son HP, Dell, IBM, Sony... Estos son algunos ejemplos:</p>
-				<img src="images/DAT/DatDELL.png" alt="Cinta DAT DELL" width="300px">
-				<p><a href="https://www.dell.com/es-es/work/shop/povw/dell-dat-media">Cartuchos de cinta Dell PowerVault DAT:</a> Para conocer el precio hay que escribir al departamento de DAT.</p>
-				<p><a href="https://www.amazon.es/HP-C8010A-Cinta-memoria-color/dp/B000FHT1GW">HP C8010A - Cinta de Memoria de 72 GB (170 m, DDS/DAT), Color Azul</a> 34,8€</p>
+				<div class="col3">
+					<h3>Marcas de cintas DAT</h3>
+					<p>Las principales marcas de cintas DAT que continúan vendiéndose son HP, Dell, IBM, Sony... Estos son algunos ejemplos:</p>
+					<img src="images/DAT/DatDELL.png" alt="Cinta DAT DELL" width="300px">
+					<p><a href="https://www.dell.com/es-es/work/shop/povw/dell-dat-media">Cartuchos de cinta Dell PowerVault DAT:</a> Para conocer el precio hay que escribir al departamento de DAT.</p>
+					<p><a href="https://www.amazon.es/HP-C8010A-Cinta-memoria-color/dp/B000FHT1GW">HP C8010A - Cinta de Memoria de 72 GB (170 m, DDS/DAT), Color Azul</a> 34,8€</p>
 				</div>
-				<div>
+				<div class="col3">
 					<h3>Marcas de grabadoras DAT</h3>
-				<p>Las empresas fabricantes de grabadores DAT más destacadas fueron HP, Dell, IBM, Tascam, Quantum... pero en la actualidad ya no fabrican estos dispositivos. Podemos encontrar algunos a la venta por internet, en eBay, Amazon, Alibaba...</p>
-				<p><a href="https://www.ebay.com/c/1393099970">Sony PCM-R500 Digital Audio Recorder DAT fast free shipping for sale online</a> 489,99$</p>
-				<p><a href="https://spanish.alibaba.com/product-detail/hp-storageworks-dat-160-tape-drive-q1575a-q1575-60005-450450-001-62143366287.html">Hp Storageworks Dat 160 Tape Drive Q1575a Q1575-60005 450450-001 - Buy Unidad De Cinta De Montaje,Unidad De Cinta,Unidad De Cinta Lto</a> 430,00$</p>
-				<p><a href="https://www.amazon.es/HP-Unidades-Unidad-cintas-interna/dp/B000YZO82M">HP Unidades de cinta HP DAT Unidad de cintas interna SAS HP DAT 160 - Cargador de cintas (160 GB, 160 GB, 16 MB,Asíncrono</a> 998,00€</p>
-				<p><a href="https://www.ebay.es/i/114220056711">QUANTUM TAPE DRIVE - DAT 160 - 80/160GB</a> 254,99 €</p>
-				<img src="images/DAT/quantum.jpg" alt="Grabadora Quantum" width="300px">
-				<img src="images/LTO/ibm dat.jpg" alt="Grabadora IBM" width="300px">
+					<p>Las empresas fabricantes de grabadores DAT más destacadas fueron HP, Dell, IBM, Tascam, Quantum... pero en la actualidad ya no fabrican estos dispositivos. Podemos encontrar algunos a la venta por internet, en eBay, Amazon, Alibaba...</p>
+					<p><a href="https://www.ebay.com/c/1393099970">Sony PCM-R500 Digital Audio Recorder DAT fast free shipping for sale online</a> 489,99$</p>
+					<p><a href="https://spanish.alibaba.com/product-detail/hp-storageworks-dat-160-tape-drive-q1575a-q1575-60005-450450-001-62143366287.html">Hp Storageworks Dat 160 Tape Drive Q1575a Q1575-60005 450450-001 - Buy Unidad De Cinta De Montaje,Unidad De Cinta,Unidad De Cinta Lto</a> 430,00$</p>
+					<p><a href="https://www.amazon.es/HP-Unidades-Unidad-cintas-interna/dp/B000YZO82M">HP Unidades de cinta HP DAT Unidad de cintas interna SAS HP DAT 160 - Cargador de cintas (160 GB, 160 GB, 16 MB,Asíncrono</a> 998,00€</p>
+					<p><a href="https://www.ebay.es/i/114220056711">QUANTUM TAPE DRIVE - DAT 160 - 80/160GB</a> 254,99 €</p>
+					<img src="images/DAT/quantum.jpg" alt="Grabadora Quantum" width="300px">
+					<img src="images/LTO/ibm dat.jpg" alt="Grabadora IBM" width="300px">
 				</div>
-				<div>
+				<div class="col3">
 					<h3>Marcas de tarjetas PCIe HBA</h3>
-				<p>También hay que mencionar los fabricantes de tarjetas PCI-E Express HBA para pc como ATTO, HP, IBM, DELL, WD, Silverstone...</p>
-				<p><a href="https://www.tonitrus.com/es/servidor/hp-server/accessories/fibre-channel-host-bus-adapter-hba/10107272-003-hp-aj763b-hp-emulex-81e-pci-e-8gb-fibre-channel-dual-port-host-bus-adapter/?number=10107272-014&gclid=Cj0KCQiAtqL-BRC0ARIsAF4K3WGSfMDG7Rp4OK-q_QRqbFHuSJtoaWz4vHUX0qJ-jrlipO7E7jjbuhoaAhbnEALw_wcB">HP Emulex 81E PCI-E 8Gb</a> 522,50€</p>
-				<p><a href="https://www.amazon.es/dp/B01M2AC40Y?tag=hardwa028-21&linkCode=ogi&th=1&psc=1">10Gtek® Internal SAS/SATA Raid Controller PCI Express Host Bus Adapter for LSI 9211-8I, LSI SAS2008 Chip, 8-Port 6Gb/s, High Profile & Low Profile</a> 125,99€</p>
-				<p><a href="https://store.atto.com/sassata-adapters/34-12gb-8-interal-ports-sas-hba.html">ExpressSAS®™ H1208 - 8 Internal 12Gb SAS ports.</a> 495,00$</p>
+					<p>También hay que mencionar los fabricantes de tarjetas PCI-E Express HBA para pc como ATTO, HP, IBM, DELL, WD, Silverstone...</p>
+					<p><a href="https://www.tonitrus.com/es/servidor/hp-server/accessories/fibre-channel-host-bus-adapter-hba/10107272-003-hp-aj763b-hp-emulex-81e-pci-e-8gb-fibre-channel-dual-port-host-bus-adapter/?number=10107272-014&gclid=Cj0KCQiAtqL-BRC0ARIsAF4K3WGSfMDG7Rp4OK-q_QRqbFHuSJtoaWz4vHUX0qJ-jrlipO7E7jjbuhoaAhbnEALw_wcB">HP Emulex 81E PCI-E 8Gb</a> 522,50€</p>
+					<p><a href="https://www.amazon.es/dp/B01M2AC40Y?tag=hardwa028-21&linkCode=ogi&th=1&psc=1">10Gtek® Internal SAS/SATA Raid Controller PCI Express Host Bus Adapter for LSI 9211-8I, LSI SAS2008 Chip, 8-Port 6Gb/s, High Profile & Low Profile</a> 125,99€</p>
+					<p><a href="https://store.atto.com/sassata-adapters/34-12gb-8-interal-ports-sas-hba.html">ExpressSAS®™ H1208 - 8 Internal 12Gb SAS ports.</a> 495,00$</p>
 				</div>
 			</section>
 
@@ -295,8 +285,8 @@
 					<h1>Autora de la web:</h1>
 					<p>Cruz López Pérez<br>
 						Estudiante DAM<br>
-						IES Campanillas PTA - Málaga</p>
-					<p>Email: mcruzlp@gmail.com</p>
+						IES Campanillas PTA - Málaga<br>
+						Email: mcruzlp@gmail.com</p>
 				</div>
 				<div class="col3">
 					<h1>Redes Sociales:</h1>

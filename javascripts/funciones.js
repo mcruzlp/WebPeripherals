@@ -1,17 +1,16 @@
 /* funciones javascript para la Landing page de Sistemas Informáticos */
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function toggle() {
+function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-      x.className += "responsive";
+      x.className += " responsive";
     } else {
       x.className = "topnav";
     }
   } 
 
 /**** para que el scroll se ejecute de manera suave y progresiva */
-
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -36,27 +35,6 @@ $(document).ready(function(){
       } // End if
     });
   });
-
-//DROPDOWN ****************************
-  /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function dropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 //SLIDESHOW ****************************
 var slideIndex = 1;

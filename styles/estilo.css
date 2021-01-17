@@ -23,75 +23,11 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 
-/******************* LAYOUT BÁSICO *************************/
-body {
-	background-color: black;
-	font-family: body;
-}
-
-h1 {
-	color: rgb(233, 185, 112);
-}
-
-h3 {
-	color: white;
-	text-decoration: underline;
-}
-
-.fa-arrow-up {
-	/***** flecha para volver al inicio ****/
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	color: rgb(233, 185, 112);
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid rgb(233, 185, 112);
-	z-index: 99;
-}
-
-#container {
-	width: 100%;
-	margin: auto;
-}
-a {
-	text-decoration: none;
-	color: rgb(233, 185, 112);
-	font-weight: bold;
-}
-
-p {
-	width: 60%;
-	margin: 40px auto;
-	text-align: left;
-	color: white;
-	padding-bottom: 20px;
-}
-
-ul {
-	list-style-type: circle;
-	width: 60%;
-	margin: 40px auto;
-	text-align: left;
-	color: white;
-	padding-bottom: 20px;
-}
-
-a:hover {
-	color: white;
-}
-
-button {
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: rgb(233, 185, 112);
-}
+/******************* BARRA DE NAVEGACIÓN ***********************/
 
 nav {
 	position: sticky;
@@ -125,58 +61,125 @@ nav {
 	display: none;
 }
 
-/************ Dropdown Button *****************/
-/* Dropdown Button */
-.dropbtn {
-	float: left;
-	display: block;
+@media screen and (max-width: 900px) {
+	/* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+/******************* LAYOUT BÁSICO *************************/
+body {
 	background-color: black;
+	font-family: body;
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+h1 {
 	color: rgb(233, 185, 112);
-	font-family: "titles";
-	padding: 10px 16px;
-	font-size: 16px;
-	border: none;
-	/*cursor: pointer;*/
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover,
-.dropbtn:focus {
-	background-color: rgb(233, 185, 112);
+h3 {
 	color: white;
+	text-decoration: underline;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-	position: relative;
-	display: inline-block;
+.fa-arrow-up {
+	/***** flecha para volver al inicio ****/
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	color: rgb(233, 185, 112);
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(233, 185, 112);
+	z-index: 99;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: rgb(233, 185, 112);
-	min-width: 160px;
-	z-index: 1;
+section {
+	padding: 10px;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-	color: white;
-	padding: 12px 16px;
+a {
 	text-decoration: none;
-	display: block;
+	color: rgb(233, 185, 112);
+	font-weight: bold;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-	background-color: #ddd;
+p {
+	margin: auto;
+	text-align: left;
+	color: white;
+	padding: 20px;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-	display: block;
+ul {
+	list-style-type: circle;
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	color: white;
+	padding: 20px;
+}
+
+.centrado {
+	position: relative;
+	margin: auto;
+}
+
+a:hover {
+	color: white;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(233, 185, 112);
+}
+
+/************** COLUMNAS*******************/
+
+.grid2col {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.col2 {
+	padding: 5%;
+	margin: 2%;
+}
+
+.grid3col {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 20px;
+}
+.col3 {
+	padding: 5%;
+	margin: 2%;
 }
 
 /*********************** HERO *******************************/
@@ -191,8 +194,8 @@ nav {
 
 #hero img {
 	position: relative;
-	top: 25vh;
-	left: 25vh;
+	top: 10vw;
+	left: 15vw;
 	width: 70%;
 	height: 70%;
 }
@@ -214,8 +217,11 @@ hr {
 
 /*********** SLIDESHOW *****************/
 
-img {
+.mySlides img {
 	vertical-align: middle;
+}
+* {
+	box-sizing: border-box;
 }
 
 /* Slideshow container */
@@ -326,10 +332,23 @@ img {
 /******************** ¿COMO FUNCIONA? ***********************/
 #funcionamiento {
 	background-image: url("../images/back/fnd-bobinas.jpg");
+	background-size: cover;
+	background-position: top center;
+}
+
+#funcionamiento div {
+	background: rgba(128, 128, 128, 0.6);
+	border-style: solid;
+	border-color: rgb(233, 185, 112);
+	border-radius: 2%;
 }
 
 #funcionamiento img {
 	width: 300px;
+}
+
+#funcionamiento img :hover {
+	opacity: 0.6;
 }
 
 /************************* TIPOS ***************************/
@@ -352,26 +371,35 @@ img {
 
 #marcas {
 	padding: 20px;
-	background-color: gray;
+	background-image: url(../images/back/eniac.jpg);
+	background-size: cover;
+	background-position: top center;
 	color: white;
+}
+
+#marcas div {
+	background: rgba(128, 128, 128, 0.6);
+	border-style: solid;
+	border-color: rgb(233, 185, 112);
+	border-radius: 8px;
 }
 
 /*********************** FOOTER *****************************/
 
 footer {
 	font-family: titles;
+	font-size: 1.1em;
 	color: rgb(233, 185, 112);
-	padding: 20px;
 	background-color: black;
 }
 
 footer .fa {
 	padding: 10px;
-	font-size: 20px;
-	width: 30px;
+	font-size: 30px;
+	width: 50px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 2px;
+	margin: 5px 5px;
 }
 
 .fa:hover {
@@ -388,122 +416,22 @@ footer .fa {
 	color: white;
 }
 
-/************** COLUMNAS*******************/
-
-.grid2col {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-.col2 {
-	/*padding: 10%;*/
-}
-/******* CONTACTO SECTION utilizando grid de 3 columnas **************/
-.grid3col {
-	display: grid;
-	grid-template-columns: auto auto auto;
-}
-.col3 {
-	padding: 5%;
-}
-.grid4col {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-}
-.col4 {
-	padding: 15px;
-	margin: 10px;
-	background-color: white;
-	border: 1px solid #4caf50;
-	border-radius: 10%;
-	transition: 0.5s;
-	box-shadow: 2px 2px 2px grey;
-}
-.col4:hover {
-}
-.col4 img {
-	width: 100%;
-	border-radius: 50%;
-	opacity: 0.6;
-	transition: 1s;
-}
-.col4 img:hover {
-	opacity: 1;
-}
-.col4 .fa {
-	font-size: 6em;
-	text-align: center;
-	display: block;
-	color: orangered;
-}
-.col4 button {
-	background-color: orangered;
-	padding: 8px;
-	border: none;
-	color: white;
-	font-weight: bold;
-	border-radius: 10px;
-	display: block;
-	margin: auto;
-}
-.col4 button:hover {
-	background-color: rgb(230, 138, 84);
-}
-
-/******************* MEDIA QUERY ************************/
-@media screen and (max-width: 900px) {
-	/* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-	.topnav a:not(:first-child) {
-		display: none;
-	}
-	.topnav a.icon {
-		float: right;
-		display: block;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-	.topnav.responsive {
-		position: relative;
-	}
-	.topnav.responsive a.icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.topnav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-}
-
 @media only screen and (max-width: 900px) {
-	.grid3col {
-		grid-template-columns: 50% 50%;
-	} /* el iframe de la 3ª columna se salta el centrado.....*/
-	.grid4col {
-		grid-template-columns: 50% 50%;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	/*tamaño móvil*/
-	#container {
-		width: 100%;
-	}
-	#intro p {
-		text-align: left;
-		width: 80%;
-	}
 	.grid2col {
 		grid-template-columns: 100%;
 	}
 	.grid3col {
 		grid-template-columns: 100%;
 	}
-	.grid4col {
-		grid-template-columns: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+	#container {
+		width: 100%;
+	}
+	#intro p {
+		text-align: left;
+		width: 80%;
 	}
 	.prev,
 	.next,
