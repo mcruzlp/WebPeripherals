@@ -13,7 +13,7 @@
 .iframe-responsive {
 	position: relative;
 	overflow: hidden;
-	width: 70%;
+	width: 100%;
 	padding-top: 50%;
 }
 
@@ -220,9 +220,7 @@ button:hover {
 
 #intro img {
 	float: left;
-	height: 70%;
-	width: auto;
-	text-align: left;
+	width: 40vw;
 	padding: 2%;
 }
 
