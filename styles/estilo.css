@@ -13,7 +13,7 @@
 .iframe-responsive {
 	position: relative;
 	overflow: hidden;
-	width: 80%;
+	width: 70%;
 	padding-top: 50%;
 }
 
@@ -220,7 +220,7 @@ button:hover {
 
 #intro img {
 	float: left;
-	height: 350px;
+	height: 70%;
 	width: auto;
 	text-align: left;
 	padding: 2%;
@@ -372,7 +372,7 @@ hr {
 #tipos {
 	background-image: url("../images/back/ibm-5100.jpg");
 	background-size: cover;
-	background-position: top center;
+	background-position: top right;
 }
 
 #tipos div {
