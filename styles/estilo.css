@@ -221,7 +221,7 @@ button:hover {
 #intro img {
 	float: left;
 	width: 400px;
-	padding: 2%;
+	padding: 5%;
 }
 
 hr {
@@ -357,7 +357,7 @@ hr {
 	float: right;
 	display: flex;
 	height: 300px;
-	padding: 2%;
+	padding: 5%;
 }
 
 /************************* TIPOS ***************************/
@@ -376,7 +376,7 @@ hr {
 
 #tipos img {
 	display: inline-block;
-	padding: 2%;
+	padding: 5%;
 	width: 300px;
 }
 
@@ -395,7 +395,8 @@ hr {
 }
 
 #install img {
-	padding: 2%;
+	padding: 5%;
+	margin: auto;
 }
 
 #zmanda {
@@ -421,7 +422,7 @@ hr {
 #marcas img {
 	width: 200px;
 	float: left;
-	padding: 2%;
+	padding: 5%;
 }
 /*********************** FOOTER *****************************/
 
