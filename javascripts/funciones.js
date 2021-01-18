@@ -37,10 +37,12 @@ $(document).ready(function(){
   });
 
 //SLIDESHOW ****************************
-var slideIndex = [1,1];
+var slideIndex = [1,4];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -59,5 +61,5 @@ function showSlides(n, no) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   x[slideIndex[no]-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  
 }
