@@ -165,6 +165,13 @@ button:hover {
 .col2 {
 	padding: 5%;
 	margin: 2px;
+	min-width: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+	.grid2col {
+		grid-template-columns: 100%;
+	}
 }
 
 .grid3col {
@@ -175,12 +182,10 @@ button:hover {
 .col3 {
 	padding: 5%;
 	margin: 2%;
+	min-width: 100px;
 }
 
-@media only screen and (max-width: 900px) {
-	.grid2col {
-		grid-template-columns: 100%;
-	}
+@media only screen and (max-width: 1000px) {
 	.grid3col {
 		grid-template-columns: 100%;
 	}
@@ -352,7 +357,7 @@ hr {
 	background: rgba(128, 128, 128, 0.6);
 	border-style: solid;
 	border-color: rgb(233, 185, 112);
-	border-radius: 2%;
+	border-radius: 10px;
 }
 
 #funcionamiento img {
@@ -379,7 +384,7 @@ hr {
 #install {
 	padding: 20px;
 	color: white;
-	background-image: url(../images/back/eniac.jpg);
+	background-image: url(../images/back/Cintas-magnéticas-12.jpg);
 	background-size: cover;
 	background-position: top center;
 }
@@ -388,12 +393,10 @@ hr {
 	background: rgba(128, 128, 128, 0.6);
 	border-style: solid;
 	border-color: rgb(233, 185, 112);
-	border-radius: 2%;
+	border-radius: 10px;
 }
 
 #install img {
-	float: left;
-	height: 300px;
 	padding: 2%;
 }
 /*********************** MARCAS *****************************/
@@ -407,9 +410,14 @@ hr {
 	background: rgba(128, 128, 128, 0.6);
 	border-style: solid;
 	border-color: rgb(233, 185, 112);
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
+#marcas img {
+	width: 200px;
+	float: left;
+	padding: 2%;
+}
 /*********************** FOOTER *****************************/
 
 footer {
