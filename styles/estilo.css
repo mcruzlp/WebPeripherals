@@ -14,7 +14,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	padding-top: 50%;
+	padding-top: 56.25%;
 }
 
 .iframe-content {
@@ -220,7 +220,7 @@ button:hover {
 
 #intro img {
 	float: left;
-	max-width: 400px;
+	width: 400px;
 	padding: 2%;
 }
 
@@ -349,22 +349,15 @@ hr {
 
 /******************** ¿COMO FUNCIONA? ***********************/
 
-#funcionamiento div {
+#funcionamiento {
 	background: rgba(128, 128, 128, 0.6);
-	border-style: solid;
-	border-color: rgb(233, 185, 112);
-	border-radius: 10px;
 }
 
 #funcionamiento img {
 	float: right;
-	display: inline;
+	display: flex;
 	height: 300px;
 	padding: 2%;
-}
-
-#funcionamiento img :hover {
-	opacity: 0.6;
 }
 
 /************************* TIPOS ***************************/
