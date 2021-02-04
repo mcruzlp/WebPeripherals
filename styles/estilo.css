@@ -230,7 +230,7 @@ hr {
 
 /*********** SLIDESHOW *****************/
 
-.mySlides img {
+.mySlides1 img, .mySlides2 img, .mySlides3 img, .mySlides4 img, {
 	vertical-align: 50%;
 	height: 50%;
 }
@@ -247,7 +247,7 @@ hr {
 
 /* Hide the images by default */
 
-.mySlides {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
 	display: none;
 }
 
