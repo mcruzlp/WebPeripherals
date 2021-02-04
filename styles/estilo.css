@@ -230,9 +230,13 @@ hr {
 
 /*********** SLIDESHOW *****************/
 
-.mySlides1 img, .mySlides2 img, .mySlides3 img, .mySlides4 img, {
+.mySlides1 img,
+.mySlides2 img,
+.mySlides3 img,
+.mySlides4 img {
 	vertical-align: 50%;
-	height: 50%;
+	height: 500px;
+	width: max-content;
 }
 * {
 	box-sizing: border-box;
@@ -247,7 +251,10 @@ hr {
 
 /* Hide the images by default */
 
-.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4 {
 	display: none;
 }
 
@@ -289,7 +296,7 @@ hr {
 	color: rgb(233, 185, 112);
 	font-size: 15px;
 	padding: 0px;
-	position: absolute;
+	position: static;
 	bottom: 0px;
 	width: 100%;
 	text-align: center;
@@ -305,7 +312,10 @@ hr {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
